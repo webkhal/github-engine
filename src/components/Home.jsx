@@ -1,5 +1,5 @@
-import Users from "./Users";
-import Search from "./Search";
+import Users from "../components/Users/users.jsx";
+import Search from "./search/search";
 import Loading from "./Loading";
 import { useContext } from "react";
 import GithubContext from "../contexts/GitHub/githubContext";

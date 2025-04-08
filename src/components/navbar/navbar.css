@@ -1,0 +1,89 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #24292e, #1f2529); /* Gradient background */
+    color: white;
+    padding: 1.2rem 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px; /* Slightly wider for modern screens */
+    margin: 0 auto;
+    padding: 0 2.5rem;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* Better spacing */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem; /* Slightly larger text */
+    font-weight: 700; /* Bolder text */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .navbar-brand:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); /* Subtle lift on hover */
+  }
+  
+  .github-icon {
+    font-size: 2rem; /* Larger icon */
+    color: #ffffff;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-brand:hover .github-icon {
+    color: #58a6ff; /* GitHub blue on hover */
+  }
+  
+  .search-icon {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: #58a6ff; /* GitHub blue for search */
+    transition: opacity 0.2s ease;
+  }
+  
+  .navbar-brand:hover .search-icon {
+    opacity: 1;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem; /* Space between links if you add more */
+  }
+  
+  .contact-us {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem; /* Add padding for clickable area */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-us:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover background */
+    transform: translateY(-2px); /* Lift effect */
+  }
+  
+  .contact-icon {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: color 0.2s ease;
+  }
+  
+  .contact-us:hover .contact-icon {
+    color: #58a6ff; /* Matching blue on hover */
+  }

@@ -3,11 +3,14 @@ import { Routes, Route } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import GithubContext from "./contexts/GitHub/githubContext";
 
+
+import "primeflex/primeflex.css";
+
 import Home from "./components/Home";
 import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import User from "./components/User";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/Footer";
+import User from "./components/user/User";
 
 function App() {
 	const { fetchData } = useContext(GithubContext);

@@ -1,0 +1,248 @@
+.user-container {
+    background: #111827; /* Gray-900 */
+    padding: 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #1f2937;
+  }
+  
+  /* Profile Card (Left) */
+  .profile-card {
+    background: linear-gradient(145deg, #d1d5db, #e5e7eb);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin-bottom: 1rem;
+    border: 3px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .profile-details {
+    text-align: center;
+  }
+  
+  .profile-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: #1e3a8a;
+  }
+  
+  .profile-bio {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin: 0 0 1rem;
+    line-height: 1.4;
+  }
+  
+  .profile-stats {
+    list-style: none;
+    padding: 0;
+    font-size: 0.85rem;
+    color: #374151;
+  }
+  
+  .profile-stats li {
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  
+  .stat-icon {
+    color: #10b981; /* Emerald green for icons */
+    font-size: 0.9rem;
+  }
+  
+  .profile-stats a {
+    color: #10b981;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .profile-stats a:hover {
+    text-decoration: underline;
+    color: #059669;
+  }
+  
+  /* Repos Section (Right) */
+  .repos-container {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+  }
+  
+  .repos-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.3rem;
+  }
+  
+  .repo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(145deg, #f9fafb, #f3f4f6);
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .repo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repo-details {
+    flex: 1;
+  }
+  
+  .repo-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.2rem;
+    color: #1d4ed8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  
+  .repo-icon {
+    color: #1d4ed8;
+    font-size: 0.9rem;
+  }
+  
+  .repo-desc {
+    font-size: 0.8rem;
+    color: #4b5563;
+    margin: 0;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .repo-meta {
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+  }
+  
+  .language-icon {
+    color: #10b981;
+    font-size: 0.75rem;
+    margin-right: 0.2rem;
+  }
+  
+  .repo-language {
+    color: #10b981;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .repo-visibility {
+    background: #6b7280;
+    color: #fff;
+    padding: 0.15rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .user-container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .profile-card {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  
+    .repos-container {
+      width: 100%;
+    }
+  
+    .repo-card {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+  
+    .repo-details {
+      margin-bottom: 0.5rem;
+    }
+  
+    .repo-visibility {
+      align-self: flex-end;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-image {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .profile-name {
+      font-size: 1.2rem;
+    }
+  
+    .profile-bio {
+      font-size: 0.85rem;
+    }
+  
+    .profile-stats {
+      font-size: 0.75rem;
+    }
+  
+    .repos-title {
+      font-size: 1rem;
+    }
+  
+    .repo-name {
+      font-size: 0.9rem;
+    }
+  
+    .repo-desc {
+      font-size: 0.7rem;
+      max-width: 150px;
+    }
+  
+    .stat-icon,
+    .repo-icon,
+    .language-icon {
+      font-size: 0.8rem;
+    }
+  }
